@@ -60,16 +60,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	
 	function result(){
-		var allergyPercent = (allergy_count/4)*100;//this is for calculating percent allergy by dividng by the four total questions, and multiplying this by 100.//
-		var coldPercent = (cold_count/4)*100;//this is for calulating percent cold, using the same method above//
+		var fluPercent = (flu_count/4)*100;//this is for calculating percent flu by dividing the answers by the four total questions, and multiplying this by 100.//
+		var strepPercent = (strep_count/4)*100;//this is for calulating percent strep, using the same method above//
 		var result = document.getElementById("five");//this is so that it replaces the results test final page with the resulting pprobablities.//
-		result.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+		result.innerHTML = "Probability it is flu =" + fluPercent + "<br> Probability it is strep =" + strepPercent;
 	}
-	//I inserted this line above to showcase the percent allergy and the percent chance of cold.//
-	//At first, I had the code above below the other codes for creating the other pages, but that didn't work. So, I moved it here.//
-	//It still didn't work, so I tried changed the ID page to five instead of "results" and also adjusted the spacings.//
-	//I just moved this entire code on the top above the script; after I moved it, I also adujusted my spacing of the var allergy percent, and it finally produced the results page and the percentages I needed.//
-//After all of this, I realized I needed to make sure my ID references on the results page matched the page ID before it//
+	//I inserted this line above to showcase the percent flu and the percent chance of strep.//
+	//the java script is complete.//
+
 </script>
 
 <!--this part of the code below is to set up the pages in the app and sets the website up so that it will show pages within the html body.--> 
